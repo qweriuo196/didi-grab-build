@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:label="DiDi Grab"
+        tools:ignore="MissingApplicationIcon">
+
+        <!-- Xposed module marker: tells LSPosed this is a module -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <!-- Description shown in LSPosed Manager -->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="DiDi Driver: bypass root/Xposed/Frida detection + auto-grab broadcast orders with price filter and human-like timing." />
+
+        <!-- Min Xposed API (82 = API level for XposedBridge v82+) -->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+        <!-- Scope: limit hooks to these packages only -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+
+    </application>
+
+</manifest>
