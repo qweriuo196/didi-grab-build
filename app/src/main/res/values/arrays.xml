@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Target packages: DiDi Driver (gsui) + DiDi Passenger (psnger) for testing -->
+    <string-array name="xposed_scope">
+        <item>com.sdu.didi.gsui</item>
+        <item>com.sdu.didi.psnger</item>
+    </string-array>
+</resources>
